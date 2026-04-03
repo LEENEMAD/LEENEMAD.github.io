@@ -2016,115 +2016,143 @@ input::-moz-focus-inner {
  * responsive:
  * intro
  * ------------------------------------------------------------------- */
-@media screen and (max-width:1400px) {
-  .intro-text h3 {
-    font-size: 2.2rem;
-  }
-
-  .intro-text h1 {
-    font-size: 7.2rem;
-  }
-
+/* =============================
+   LARGE SCREENS (default fix)
+============================= */
+.intro-text h3 {
+    font-size: 16px;
+    color: #ff2c75;
+    margin-bottom: 10px;
 }
 
+.intro-text h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    max-width: 600px;
+}
+
+.intro-text {
+    margin-top: 40px;
+}
+
+
+/* =============================
+   TABLETS (≤1200px)
+============================= */
 @media screen and (max-width:1200px) {
   .intro-content {
     max-width: 1000px;
   }
 
   .intro-text h3 {
-    font-size: 2rem;
+    font-size: 14px;
   }
 
   .intro-text h1 {
-    font-size: 7rem;
+    font-size: 36px;
   }
-
 }
 
+
+/* =============================
+   SMALL TABLETS (≤1024px)
+============================= */
 @media screen and (max-width:1024px) {
   .s-intro {
     max-height: 800px;
   }
 
   .intro-text h1 {
-    font-size: 6.2rem;
+    font-size: 32px;
   }
-
 }
 
+
+/* =============================
+   MOBILE (≤900px)
+============================= */
 @media screen and (max-width:900px) {
   .intro-text h1 {
-    font-size: 6rem;
+    font-size: 26px;
   }
 
   .intro-text br {
     display: none;
   }
-
 }
 
+/* =============================
+   MOBILE (≤800px)
+============================= */
 @media screen and (max-width:800px) {
   .intro-content {
-    width: 88%;
-    padding-top: 8rem;
+    width: 90%;
+    padding-top: 6rem;
   }
 
   .intro-pic {
-    top: 12%;
-    left: 40%;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
   }
 
   .intro-pic::before {
-    opacity: .4;
+    opacity: .3;
   }
 
   .intro-grid {
-    top: 20%;
-    opacity: .1;
+    display: none;
   }
 
   .intro-text h3 {
-    font-size: 1.8rem;
+    font-size: 14px;
   }
 
   .intro-text h1 {
-    font-size: 5.6rem;
+    font-size: 28px;
+    line-height: 1.3;
   }
-
 }
 
+
+/* =============================
+   SMALL MOBILE (≤700px)
+============================= */
 @media screen and (max-width:700px) {
   .intro-text h1 {
-    font-size: 5rem;
+    font-size: 26px;
   }
-
-  .intro-pic {
-    left: 30%;
-  }
-
-  .intro-grid {
-    left: 15%;
-  }
-
 }
 
+
+/* =============================
+   VERY SMALL SCREENS (≤600px)
+============================= */
 @media screen and (max-width:600px) {
   .s-intro {
     max-height: none;
   }
 
   .intro-content {
-    width: auto;
+    width: 95%;
   }
 
-  .intro-pic {
-    left: 20%;
+  .intro-text {
+    transform: none;
   }
 
-  .intro-grid {
-    left: 10%;
+  .intro-text h1 {
+    font-size: 24px;
   }
+
+  .intro-scroll {
+    font-size: 12px;
+    left: 20px;
+  }
+}
 
   .intro-text {
     -webkit-transform: translate3d(0, -4.8rem, 0);
